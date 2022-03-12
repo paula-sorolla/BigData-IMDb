@@ -6,6 +6,7 @@
 ### Years
 
 Make Years into integers (int16) before/when storing them in the DB 
+
 When reading them for our model they should be transformed into strings since they are a categorical feature
 
 ### Label
