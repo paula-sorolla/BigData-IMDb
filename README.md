@@ -28,12 +28,14 @@ Keep only the digits that are useful and use these instead of the useless inform
 
 ### General
 
-1.**This should be done FIRST** .Every /N should be turned to null, since /N is a character and that occupies uneeded space and also makes our in memory usage bigger for no reason
+1.**This should be done FIRST** .Drop every row that has ***either*** numVotes, label, (startYear && endYear), (originalTitle && primaryTitle) null.
 
-2.The manipulations should be done in the least amount of passes possible
+2.**This should be done SECOND** .Every /N should be turned to null, since /N is a character and that occupies uneeded space and also makes our in memory usage bigger for no reason
+
+3.The manipulations should be done in the least amount of passes possible
 
 
-3.Drops should be done with bigger priority in order to reduce further memory strain
+4.Drops should be done with bigger priority in order to reduce further memory strain
 
 
 **Attention**
